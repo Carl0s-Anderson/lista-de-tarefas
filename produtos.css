@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #0d0d0f; /* Preto com leve tom metálico */
+    color: #66fcf1; /* Azul-ciano brilhante */
+    font-family: 'Courier New', Courier, monospace; /* Estilo tecnológico */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1b2838, #0d0d0f); /* Tons metálicos */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+    border: 1px solid #66fcf1;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #66fcf1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #45a29e; /* Azul mais suave */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project {
+    flex: 1 1 calc(45% - 10px);
+    max-width: calc(45% - 10px);
+    background: #1b2838; /* Cinza escuro industrial */
+    border: 1px solid #45a29e; /* Bordas azul metálico */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: #66fcf1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #45a29e; /* Moldura metálica */
+}
+
+.project p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project a {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 8px 12px;
+    background: #45a29e; /* Azul metálico */
+    color: #0d0d0f; /* Preto metálico */
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project a:hover {
+    background: #66fcf1; /* Azul brilhante */
+    color: #1b2838; /* Texto com tom cinza */
+    transform: translateY(-3px);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #66fcf1;
+    border-top: 1px solid #45a29e;
+    padding-top: 10px;
+}
